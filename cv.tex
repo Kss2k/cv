@@ -1,0 +1,89 @@
+%% start of file `cv.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\moderncvstyle{classic}
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\footskip}{136.00005pt}
+
+\usepackage{graphicx}
+\newcommand{\pkgicon}[1]{\raisebox{-0.2\height}{\includegraphics[height=1.2em]{#1}}}
+
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage[english]{babel}
+
+% personal data
+\name{Kjell}{Slupphaug}
+\title{Data Scientist, Statistics Norway (SSB)}
+\address{}{Norway}{}
+
+% Social icons
+\social[linkedin][www.linkedin.com/in/kjell-slupphaug-b8a86a227]{Kjell Slupphaug}                  % optional, remove / comment the line if not wanted
+\social[github]{Kss2k}                              % optional, remove / comment 
+\social[orcid]{0009-0005-8324-2834}                  % optional, remove / 
+\photo[64pt][0.4pt]{picture}                       % optional,
+
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{Aug 2022 -- Jun 2024}{MSc (Master) in General Psychology (120 ECTS)}{Norwegian University of Science and Technology (NTNU)}{}{}{}
+\cventry{Aug 2019 -- Jun 2022}{BSc (Bachelor) in Psychology (180 ECTS)}{Norwegian University of Science and Technology (NTNU)}{}{}{}
+
+\section{Work Experience}
+\cventry{Aug 2024 -- Present}{Data Scientist}{Statistics Norway (SSB)}{}{}{Daily work with R, Python, and SQL}
+
+\section{Open-Source Projects}
+\cvitem{\pkgicon{modsem.png}\,\texttt{modsem}}{Creator \& maintainer. R package for estimating latent interactions in SEMs.\newline\url{https://github.com/Kss2k/modsem}}
+\cvitem{\pkgicon{plssem.png}\,\texttt{plssem}}{Creator \& maintainer. R package for PLS-SEM.\newline\url{https://github.com/Kss2k/plssem}}
+\cvitem{\pkgicon{wrapr.png}\,\texttt{rwrapr}}{Creator \& maintainer. Python package for working with R from Python.\newline\url{https://github.com/statisticsnorway/ssb-rwrapr}}
+
+\section{Software Proficiencies}
+\cvitem{\texttt{R}}{Extensive (daily use; package development)}
+\cvitem{\texttt{Python}}{Extensive (daily use; package development)}
+\cvitem{\texttt{C} / C++}{Extensive (including R and Python integration)}
+\cvitem{\texttt{SQL}}{Extensive (daily use)}
+\cvitem{\texttt{Git}}{Extensive (daily use)}
+\cvitem{\texttt{GitHub}}{Extensive (daily use)}
+\cvitem{\texttt{Linux}}{Extensive (daily use)}
+
+\section{Languages}
+\cvitemwithcomment{Norwegian}{Native}{Oral and written}
+\cvitemwithcomment{English}{Fluent}{Oral and written}
+
+\section{Publications}
+\cvitem{2025}{Slupphaug, K. S., Mehmetoglu, M., \& Mittner, M. \emph{modsem: An R package for estimating latent interactions and quadratic effects}. Structural Equation Modeling: A Multidisciplinary Journal, 32(4), 717--729.}
+\cvitem{2025}{Thorp, S. O., Slupphaug, K. S., Rimol, L. M., Lervik, S., Hoel, S. K. B., \& Grassini, S. \emph{Conformity towards humans versus AI in different task domains: the type of task matters}. Journal of Psychology and AI, 1(1), 2540762.}
+
+\section{Preprints}
+\cvitem{2026}{Slupphaug, K., Mehmetoglu, M., \& Mittner, M. \emph{Consistent Estimates from Biased Estimators: Monte-Carlo Consistent Partial Least Squares for Latent Interaction Models with Ordinal Indicators}. OSF preprint.}
+\cvitem{2024}{Mehmetoglu, M., \& Mittner, M. \emph{rmedsem: Statistical mediation analysis for covariance-based, partial least-squares and Bayesian structural equation models}. Preprint.}
+\cvitem{2026}{Vieira, F., Slupphaug, K., \& Rosseel, Y. \emph{Evaluating Local Structural-After-Measurement (LSAM) and Traditional Approaches for the Estimation of Complex Nonlinear Effects Among Latent Variables}. OSF preprint.}
+\end{document}
+
+%% end of file `cv.tex'.
